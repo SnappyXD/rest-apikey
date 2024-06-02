@@ -10,5 +10,6 @@ COPY . /app
 # Install the application dependencies
 RUN npm install
 
+RUN npm audit fix --force
 # Define the entry point for the container
 CMD ["npm", "start"]
