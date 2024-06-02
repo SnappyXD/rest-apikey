@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the application dependencies
-RUN npm install
+RUN npm i
 
 RUN npm audit fix --force
 # Define the entry point for the container
